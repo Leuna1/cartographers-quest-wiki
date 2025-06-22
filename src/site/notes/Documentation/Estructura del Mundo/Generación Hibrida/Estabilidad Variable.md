@@ -3,4 +3,4 @@
 ---
 
 
-Cada región tiene su propia resistencia a “El Desvanecimiento”. Creando una priorización natural.
+Cada región tiene su propia resistencia a [[Documentation/Conceptos/El Desvanecimiento\|El Desvanecimiento]]. Creando una priorización natural. 
