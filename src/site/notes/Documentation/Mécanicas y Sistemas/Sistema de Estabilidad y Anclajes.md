@@ -7,7 +7,7 @@ Los [[Anclajes de Estabilidad\|anclajes de estabilidad]] son elementos especiale
 
 # Tipos de Anclajes de Estabilidad
 
-## 1. Anclajes Físicos
+1. Anclajes Físicos
     
 	- Puntos de interés distintivos como árboles antiguos, formaciones de rocas inusuales o monumentos
     
@@ -15,7 +15,7 @@ Los [[Anclajes de Estabilidad\|anclajes de estabilidad]] son elementos especiale
     
 	- Fenómenos naturales como aguas termales, cascadas únicas o formaciones de cristal
     
-## 2. Anclajes Culturales
+2. Anclajes Culturales
     
 	- Tradiciones locales y rituales que mantienen conexiones con los lugares
     
@@ -25,7 +25,7 @@ Los [[Anclajes de Estabilidad\|anclajes de estabilidad]] son elementos especiale
     
 	- Actividades comunitarias que refuerzan la importancia espacial (mercados, festivales)
     
-## 3. Anclajes de Conocimiento
+3. Anclajes de Conocimiento
     
 	- Patrones que revelan verdades profundas de las regiones (Lógica del flujo de los ríos, principio de formación de las montañas)
     
@@ -35,7 +35,7 @@ Los [[Anclajes de Estabilidad\|anclajes de estabilidad]] son elementos especiale
     
 	- Eventos históricos que le dieron forma a la región
     
-## 4. Anclajes de Conexión
+4. Anclajes de Conexión
     
 	- Puntos donde múltiples anclajes se conectan
     
