@@ -44,7 +44,7 @@ Gran parte del terreno se llenara proceduralmente, haciendo que la experiencia d
 # Implementación
 
 ## Generación por capas
-Se comienza con el esqueleto del mundo, después se le aplican capas de algoritmos que respetan las restricciones regionales
+Se comienza con el esqueleto del mundo posicionando las zonas importantes y pre-diseñadas, después se le aplican capas de algoritmos que respetan las restricciones regionales
 
 ## Reglas de Bioma
 Cada bioma tiene sus propias reglas de generación (Densidad de bosques, formación de elevaciones, etc.)
@@ -59,4 +59,4 @@ Las localizaciones importantes para la narrativa se mantienen consistentes, mien
 El entorno cambia de acuerdo a las estaciones y acciones del jugador.
 
 ## Visualización de El Desvanecimiento
-Las regiones muestran indicios claros de la estabilidad del mapa de acuerdo al progreso del mapeo**
+Las regiones muestran indicios claros de la estabilidad del mapa de acuerdo al progreso del mapeo
