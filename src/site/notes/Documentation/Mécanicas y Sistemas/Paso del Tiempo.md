@@ -7,5 +7,5 @@ El juego gozara de un sistema de día y noche con seguimiento de los días. Inte
 ---
 ### Eventos afectados por el paso del tiempo
 
-- [[Documentation/Estructura del Mundo/Generación Hibrida/Cambios Estacionales\|Cambios Estacionales]]
+- [[Cambios Estacionales\|Cambios Estacionales]]
 - 
