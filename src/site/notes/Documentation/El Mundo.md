@@ -21,7 +21,7 @@ El objetivo de esto es que estas zonas serán mas vivas y con mayor atención al
 ---
 ## Estabilidad Variable
 
-Cada región tiene su propia resistencia a [[Documentation/Conceptos/El Desvanecimiento\|El Desvanecimiento]]. Creando una priorización natural. 
+Cada región tiene su propia resistencia a [[Documentation/Conceptos/El Desvanecimiento\|El Desvanecimiento]]. Creando una priorización natural. Esto depende netamente de la [[Documentation/Mécanicas y Sistemas/Estabilidad\|Estabilidad]] de la región
 
 ---
 ## Plantillas Regionales
@@ -38,17 +38,25 @@ Localizaciones pre-diseñadas importantes para la historia puestos dentro de los
 
 Terrenos, caminos, puntos de interés y recursos generados por algoritmos.
 
+Gran parte del terreno se llenara proceduralmente, haciendo que la experiencia de cada jugador sea distinta. Los desafíos se encontraran en diferentes lugares así como las zonas pre-diseñadas.
+
+---
 # Implementación
 
+## Generación por capas
+Se comienza con el esqueleto del mundo, después se le aplican capas de algoritmos que respetan las restricciones regionales
 
-1. Esquema Continental: Masas de tierra construidas a mano con biomas distintivos y puntos de interés claves
-    
-2. Plantillas Regionales: Tipos de regiones pre-diseñadas (Bosque antiguo, Archipiélagos volcánicos, etc.) con temas y desafíos consistentes.
-    
-3. Relleno Procedural: Terrenos, caminos, puntos de interés y recursos generados por algoritmos.
-    
-4. Puntos de anclajes Narrativos: Localizaciones pre-diseñadas importantes para la historia puestos dentro de los algoritmos de generación.
-    
-5. Estabilidad Variable: Cada región tiene su propia resistencia a “El Desvanecimiento”. Creando una priorización natural.
-    
-6. Cambios Estacionales: El mundo cambia visualmente y funcionalmente de acuerdo a la temporada actual, afectando el reto al mapear.**
+## Reglas de Bioma
+Cada bioma tiene sus propias reglas de generación (Densidad de bosques, formación de elevaciones, etc.)
+
+## Dificultad Gradual
+Progresión gradual de dificultad al avanzar por las regiones, con elementos procedurales escalando acorde.
+
+## Integración Narrativa
+Las localizaciones importantes para la narrativa se mantienen consistentes, mientras que el camino entre ellas cambia de juego en juego.
+
+## Mundo Dinámico
+El entorno cambia de acuerdo a las estaciones y acciones del jugador.
+
+## Visualización de El Desvanecimiento
+Las regiones muestran indicios claros de la estabilidad del mapa de acuerdo al progreso del mapeo**
