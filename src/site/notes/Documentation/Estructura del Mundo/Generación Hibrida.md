@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/documentation/estructura-del-mundo/generacion-hibrida/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-path":"Estructura del Mundo/Generación Hibrida.md","permalink":"/estructura-del-mundo/generacion-hibrida/","dgPassFrontmatter":true}
 ---
 
 ## Esquema Continental

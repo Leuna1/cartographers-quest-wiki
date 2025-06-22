@@ -1,4 +1,4 @@
 ---
-{"dg-publish":true,"permalink":"/documentation/conceptos/el-desvanecimiento/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-path":"Conceptos/El Desvanecimiento.md","permalink":"/conceptos/el-desvanecimiento/","dgPassFrontmatter":true}
 ---
 
