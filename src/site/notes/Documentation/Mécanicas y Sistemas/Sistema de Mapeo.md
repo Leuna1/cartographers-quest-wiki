@@ -2,8 +2,9 @@
 {"dg-publish":true,"dg-path":"Mécanicas y Sistemas/Sistema de Mapeo.md","permalink":"/mecanicas-y-sistemas/sistema-de-mapeo/","dgPassFrontmatter":true}
 ---
 
+Este es el sistema principal del juego. Es el núcleo del juego y todas las demás mecánicas tienen relación directa con esto. En cartographer's quest, tu tarea es crear mapas de las regiones que exploras para conocer sus secretos y mejorar su [[Documentation/Mécanicas y Sistemas/Estabilidad\|Estabilidad]]
+# ¿Cómo funciona?
 
----
 ### Clima y Tiempo
 Dependiendo de las condiciones, la visualización y la precisión del mapeo se verá afectada.
 

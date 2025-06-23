@@ -31,7 +31,7 @@ Tipos de regiones pre-diseñadas (Bosque antiguo, Archipiélagos volcánicos, et
 ---
 ## Puntos de anclajes Narrativos
 
-Localizaciones pre-diseñadas importantes para la historia puestos dentro de los algoritmos de generación.
+[[Anclajes de Estabilidad\|Anclajes de Estabilidad]] localizados en zonas pre-diseñadas importantes para la historia puestos dentro de los algoritmos de generación.
 
 ---
 ## Relleno Procedural
