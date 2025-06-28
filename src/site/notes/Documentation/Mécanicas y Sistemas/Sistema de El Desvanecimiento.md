@@ -63,6 +63,7 @@ Los [[Anclajes de Estabilidad\|Anclajes de Estabilidad]] establecen un nivel mí
 - **Anclajes de Ralentización**: Reducen la velocidad de decadencia sin aumentar el mínimo
 - **Anclajes de Área**: Protegen zonas específicas dentro de la región
 - **Anclajes Mixtos**: Combinan múltiples efectos
+- Más anclajes TBD
 
 ### Descubrimiento de Anclajes
 Al descubrir un anclaje:
