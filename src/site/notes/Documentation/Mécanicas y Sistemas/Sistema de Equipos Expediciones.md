@@ -3,119 +3,204 @@
 ---
 
 
-# Sistema de expediciones:
+# Sistema de Equipos Expediciones
 
-1. Despliegue basado en el mapa: Los equipos viajan haciendo uso de tu mapa para explorar puntos de interés marcados.
-    
-2. Composición de los equipos: Diferentes especialistas pueden ser enviados en base a la naturaleza de las localizaciones marcadas.
-    
-3. Impacto de la calidad del mapa: La precisión, detalle y certeza del mapa afecta directamente el resultado de la expedición.
-    
-4. Manejo de recursos: Las expediciones requieren recursos y pago en base a la duración y composición del equipo.
-    
-5. Progresión del tiempo e inmersión: Las expediciones ocurren en tiempo real mientras exploras. Puedes encontrarte a los equipos de las expediciones mientras realizan su trabajo e interactuar con ellas.
-    
+## Descripción General
 
-# Tipos de equipos de expediciones y propósito:
+El sistema de equipos expediciones permite al jugador enviar especialistas desde su campamento para explorar y confirmar puntos de interés marcados en el mapa. Las expediciones operan en tiempo real mientras el jugador explora, creando un sistema dinámico donde ambas actividades se complementan.
 
-1. Equipo Botánico: Se especializan en identificación de la flora, propiedades herbarias y cultivación de plantas.
-    
+## Pilares de Diseño
 
-2. Mejores para: Formaciones inusuales de plantas, hierbas medicinales potenciales, anomalías en los bosques.
-    
-3. Pueden retornar con: Semillas raras, conocimiento de plantas, remedios naturales, información ecológica.
-    
-4. Propósito: Descubrir nuevas plantas con efectos en la jugabilidad (curación, otros efectos)
-    
-5. Contribución a El Desvanecer: Pueden identificar patrones en las plantas que sirven de anclajes de estabilidad
-    
+- **Especialización:** Cada tipo de equipo tiene fortalezas específicas para diferentes tipos de localizaciones
+- **Confirmación de Mapeo:** Los equipos validan y confirman puntos de interés marcados por el jugador
+- **Tiempo Real:** Las expediciones ocurren simultáneamente con la exploración del jugador
+- **Evolución Progresiva:** Los expedicionarios mejoran sus capacidades con el uso y experiencia
+- **Interacción Dinámica:** El jugador puede encontrar y interactuar con sus equipos durante la exploración
 
-6. Equipo Geologico: 
-    
+## Mecánicas Fundamentales
 
-7. Mejores para: Formaciones de rocas extrañas, depósitos minerales, análisis de terreno.
-    
-8. Pueden retornar con: Muestras de minerales, cristales, cuevas, conocimiento estructural.
-    
-9. Propósito: Encontrar recursos valiosos que pueden ser vendidos o usados para crear herramientas. 
-    
-10. Contribución a El Desvanecer: Descubren puntos de anclajes geológicos que aumentan la estabilidad.
-    
+### Despliegue de Expediciones
 
-11. Equipo Mercenario: Exploradores entrenados en combate que pueden viajar por zonas peligrosas 
-    
+**Proceso de Envío:**
+1. Seleccionar punto de interés marcado en el mapa
+2. Elegir tipo de equipo apropiado para la localización
+3. Asignar recursos necesarios (suministros, equipamiento)
+4. Confirmar expedición y tiempo estimado
 
-12. Mejores para: Territorios con monstruos, campamentos de bandidos y terrenos peligrosos
-    
-13. Pueden retornar con: Rutas seguras de navegación, evaluación de peligro, artefactos recuperados, patrones de comportamiento de las criaturas.
-    
-14. Propósito: Liberar zonas o proteger a las expediciones de las amenazas.
-    
-15. Contribución a El Desvanecer: Asegurar ciertas áreas aumenta la estabilidad de la zona.
-    
+**Factores de Éxito:**
+- **Precisión del Mapa:** Certeza de la posición, escala correcta, detalles del terreno
+- **Especialización Correcta:** Coincidencia entre tipo de equipo y naturaleza de la localización
+- **Recursos Adecuados:** Suministros suficientes para duración y composición del equipo
+- **Condiciones Ambientales:** Temporada/clima apropiado para la expedición
+- **Conocimiento Previo:** Información disponible sobre la localización objetivo
 
-16. Equipo Arqueológico:  Estudiosos que se especializan en ruinas, artefactos y civilizaciones antiguas.
-    
+### Confirmación de Puntos de Interés
 
-17. Mejores para: Ruinas, monumentos, construcciones extrañas, asentamientos antiguos.
-    
-18. Pueden retornar con: Conocimiento histórico, fragmentos de artefactos, conocimiento arquitectónico, información cultural
-    
-19. Propósito: Descubrir elementos históricos y misterios regionales.
-    
-20. Contribución a El Desvanecer: Los lugares antiguos suelen contener puntos de anclaje poderosos.
-    
+**Sistema de Validación:**
+- Los equipos llegan a la zona marcada y evalúan si corresponde con su especialidad
+- **Match Exitoso:** Punto válido + equipo apropiado = confirmación del punto de interés
+- **Fallo de Confirmación:** Si el punto es diferente a lo esperado, la expedición falla sin consecuencias graves
+- **Evolución del Sistema:** Expedicionarios experimentados pueden proporcionar información sobre puntos cercanos o corregir errores en el mapa
 
-21. Emisarios culturales: Diplomáticos y lingüistas capaces de interactuar con civilizaciones indígenas de la zona.
-    
+### Interacción en Tiempo Real
 
-22. Mejores para: Villas, puntos de intercambio, puntos de interés culturales, sitios sagrados
-    
-23. Pueden retornar con: Fragmentos de lenguaje, prácticas culturales, mitos locales, acuerdos de intercambio.
-    
-24. Propósito: Construir relaciones que abren nuevas oportunidades y misiones.
-    
-25. Contribución a El Desvanecer: Tener conocimiento local es clave para conocer nuevas cosas que aumenten la estabilidad
-    
+**Encuentros Durante Exploración:**
+- Los equipos aparecen en el mundo mientras realizan su trabajo
+- **Interacciones Simples:** Burbujas de diálogo con pistas, animaciones o sonidos característicos
+- **Reconocimiento Mutuo:** Los equipos saludan o hacen ruidos al ver al jugador
+- **Fluidez Constante:** Las interacciones no detienen el flujo del juego
 
-26. Equipo Naturalista: Expertos en vida salvaje que se enfocan en el comportamiento de los animales. 
-    
+**Control Dinámico:**
+- Cambio de órdenes sobre la marcha (redirección a nueva localización)
+- Llamar equipos cercanos a la posición del jugador
+- Ajustes menores sin interrumpir la expedición principal
 
-27. Mejores para: Caminos de migración, moradas de criaturas, anomalías del ecosistema
-    
-28. Pueden retornar con: Observaciones de comportamiento, catálogo de especies, tecnicas para cazar y domar animales (útil para otros equipos)
-    
-29. Propósito: Descubrir criaturas con comportamientos únicos que afectan la exploración.
-    
-30. Contribución a El Desvanecer: Entender el ecosistema aumenta la estabilidad general.
-    
+## Tipos de Equipos Expedicionarios
 
-Sistema de resultado de expediciones
+### Equipo Botánico
+**Especialización:** Flora, propiedades herbarias, ecosistemas vegetales
+- **Mejores Para:** Formaciones inusuales de plantas, hierbas medicinales, anomalías forestales
+- **Retornan Con:** Semillas raras, conocimiento de plantas, remedios naturales, información ecológica
+- **Propósito:** Descubrir plantas con efectos de jugabilidad (curación, buffs)
+- **Contribución a Estabilidad:** Identifican patrones vegetales que sirven como anclajes naturales
 
-1. Factores de Exito:
-    
+### Equipo Geológico
+**Especialización:** Formaciones rocosas, minerales, análisis de terreno
+- **Mejores Para:** Formaciones rocosas extrañas, depósitos minerales, análisis estructural
+- **Retornan Con:** Muestras minerales, cristales, mapeo de cuevas, conocimiento estructural
+- **Propósito:** Encontrar recursos valiosos para comercio o fabricación de herramientas
+- **Contribución a Estabilidad:** Descubren anclajes geológicos que refuerzan la estabilidad regional
 
-2. Certeza del mapa (puntos de interés bien posicionados, escala correcta, detalles del terreno, etc)
-    
-3. Elección correcta de los miembros del equipo para el tipo de localización
-    
-4. Correcta asignación de los recursos para el equipo
-    
-5. Temporada/Clima apropiado para la expedición
-    
-6. Conocimiento de la localización
-    
+### Equipo Mercenario
+**Especialización:** Combate, navegación en terrenos peligrosos, evaluación de amenazas
+- **Mejores Para:** Territorios con monstruos, campamentos hostiles, terrenos peligrosos
+- **Retornan Con:** Rutas seguras, evaluación de peligros, artefactos recuperados, patrones de comportamiento
+- **Propósito:** Liberar zonas peligrosas y proteger otras expediciones
+- **Contribución a Estabilidad:** Asegurar áreas aumenta la estabilidad local
 
-7. Niveles de resultado:
-    
+### Equipo Arqueológico
+**Especialización:** Ruinas, artefactos, civilizaciones antiguas
+- **Mejores Para:** Ruinas, monumentos, construcciones extrañas, asentamientos antiguos
+- **Retornan Con:** Conocimiento histórico, fragmentos de artefactos, información arquitectónica y cultural
+- **Propósito:** Descubrir elementos históricos y resolver misterios regionales
+- **Contribución a Estabilidad:** Los sitios antiguos contienen anclajes de estabilidad poderosos
 
-8. Fallo Crítico: El equipo perdió, se consumieron los recursos, la reputación baja
-    
-9. Fallo parcial: El equipo regresa con mínima recompensa, lastimados y con recursos perdidos
-    
-10. Exito básico: El equipo retorna con la recompensa esperada y todos los miembros intactos
-    
-11. Éxito Mejorado: El equipo regresa con la recompensa esperada y descubrimientos adicionales
-    
-12. Exito critico: Igual que exito básico pero el equipo regresa con descubrimientos únicos que impactan el mundo y el conocimiento
-    
+### Emisarios Culturales
+**Especialización:** Diplomacia, lingüística, interacción con civilizaciones locales
+- **Mejores Para:** Villas, puntos de intercambio, sitios culturales, lugares sagrados
+- **Retornan Con:** Fragmentos de lenguaje, prácticas culturales, mitos locales, acuerdos comerciales
+- **Propósito:** Construir relaciones que abren nuevas oportunidades y misiones
+- **Contribución a Estabilidad:** El conocimiento local es clave para identificar nuevos anclajes
+
+### Equipo Naturalista
+**Especialización:** Vida salvaje, comportamiento animal, ecosistemas
+- **Mejores Para:** Rutas de migración, guaridas de criaturas, anomalías ecosistémicas
+- **Retornan Con:** Observaciones de comportamiento, catálogo de especies, técnicas de caza y domesticación
+- **Propósito:** Descubrir criaturas con comportamientos únicos que afectan la exploración
+- **Contribución a Estabilidad:** Comprender el ecosistema aumenta la estabilidad general
+
+## Sistema de Resultados
+
+### Niveles de Éxito
+
+**Fallo Crítico:**
+- Equipo perdido o gravemente herido
+- Recursos completamente consumidos
+- Reducción de reputación y moral
+
+**Fallo Parcial:**
+- Equipo regresa con heridas menores
+- Recompensa mínima obtenida
+- Pérdida parcial de recursos
+
+**Éxito Básico:**
+- Equipo regresa intacto con recompensa esperada
+- Confirmación exitosa del punto de interés
+- Recursos utilizados según lo planeado
+
+**Éxito Mejorado:**
+- Recompensa esperada más descubrimientos adicionales
+- Información extra sobre la región
+- Eficiencia en el uso de recursos
+
+**Éxito Crítico:**
+- Descubrimientos únicos que impactan el mundo
+- Revelación de nuevos puntos de interés
+- Bonificaciones significativas al conocimiento regional
+
+## Eventos Especiales
+
+### Activación de Anclajes
+- Ciertos anclajes requieren presencia de equipos específicos para activarse
+- Múltiples expedicionarios pueden ser necesarios para anclajes complejos
+- Coordinación entre diferentes tipos de equipos
+
+### Eventos Culturales y Temporales
+- Festivales o ceremonias que requieren presencia de Emisarios Culturales
+- Eventos estacionales que solo ocurren en condiciones climáticas específicas
+- Fenómenos naturales que necesitan observación especializada
+
+### Características de los Eventos
+- **Repetibilidad:** La mayoría son repetibles pero con recompensas decrecientes
+- **Condiciones:** Pueden requerir clima específico, época del año, o múltiples expediciones
+- **Descubrimiento:** Algunos eventos solo se revelan después de confirmar ciertos puntos de interés
+
+## Progresión y Evolución
+
+### Desarrollo de Expedicionarios
+
+**Personalidad por Especialidad:**
+- Cada tipo de equipo desarrolla características únicas según su área de expertise
+- Los rasgos de personalidad influyen en las interacciones y reportes
+- Especialistas experimentados proporcionan información más detallada
+
+**Evolución de Capacidades:**
+- Las habilidades mejoran con el uso y experiencia en campo
+- Expedicionarios veteranos pueden identificar oportunidades adicionales
+- Capacidad progresiva para corregir errores de mapeo y sugerir mejoras
+
+### Mejoras de Equipamiento
+
+**Herramientas Especializadas:**
+- Equipamiento mejorado aumenta las posibilidades de éxito
+- Herramientas específicas para cada tipo de expedición
+- Tecnologías que se desbloquean con el progreso del juego
+
+**Gestión de Recursos:**
+- Balanceo progresivo entre costo y beneficio de las expediciones
+- Decisiones estratégicas sobre asignación de recursos limitados
+- Optimización de rutas y timing para maximizar eficiencia
+
+## Riesgos y Consecuencias
+
+### Amenazas Ambientales
+- **El Desvanecimiento:** Expedicionarios pueden perderse en regiones afectadas
+- **Heridas y Pérdidas:** Equipos pueden ser heridos o perdidos permanentemente
+- **Condiciones Adversas:** Clima y terreno peligroso afectan las posibilidades de éxito
+
+### Gestión de Personal
+- **Intercambiabilidad:** Todos los expedicionarios son intercambiables dentro de su categoría
+- **Reemplazo:** Sistema de reclutamiento para reponer pérdidas (mecánica a definir)
+- **Límites Operacionales:** Restricciones en expediciones simultáneas (balanceo a definir)
+
+## Integración con Otros Sistemas
+
+### Conexiones Principales
+- **[[Documentation/Mécanicas y Sistemas/Sistema de Mapeo\|Sistema de Mapeo]]:** Las expediciones validan y mejoran la precisión del mapa
+- **[[Documentation/Mécanicas y Sistemas/Sistema de Conocimiento\|Sistema de Conocimiento]]:** Los descubrimientos se registran automáticamente
+- **[[Documentation/Mécanicas y Sistemas/Sistema de Campamentos\|Sistema de Campamentos]]:** Base de operaciones para todas las expediciones
+- **[[Documentation/Mécanicas y Sistemas/Sistema de El Desvanecimiento\|Sistema de El Desvanecimiento]]:** Riesgo constante que afecta la seguridad de las expediciones
+- **[[Documentation/Mécanicas y Sistemas/Sistema de Estabilidad y Anclajes\|Sistema de Estabilidad y Anclajes]]:** Contribución directa al descubrimiento y activación de anclajes
+
+### Flujo de Información
+- Los resultados de expediciones alimentan el sistema de conocimiento
+- Las mejoras en el mapa facilitan futuras expediciones
+- Los anclajes descubiertos proporcionan bases más seguras para operaciones
+
+---
+
+**Áreas para Expansión Futura:**
+- Mecánicas específicas de reclutamiento
+- Sistema de nombres y evolución de expedicionarios
+- Balanceo de límites operacionales
+- Eventos especiales únicos por región
