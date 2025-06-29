@@ -151,6 +151,6 @@ A medida que el jugador progresa:
 - Los anclajes proporcionan mayor seguridad
 - Las habilidades de viaje por el desvanecimiento abren nuevas posibilidades
 - Las bonificaciones de red hacen más eficiente la gestión
-- El conocimiento acumulado facilita la toma de decisiones
+- El cono-cimiento acumulado facilita la toma de decisiones
 
 
