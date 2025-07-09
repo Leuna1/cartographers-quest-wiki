@@ -201,7 +201,7 @@ Los campamentos son las "bases" del jugador en Cartographer's Quest. Funcionan c
 - **Planificación**: Desde aquí se planifican las rutas de exploración
 - **Análisis**: Procesamiento de información cartográfica recopilada
 
-## Relación con [[Documentation/Mécanicas y Sistemas/Estabilidad\|Estabilidad]]
+## Relación con [[Estabilidad\|Estabilidad]]
 - **Anclajes**: Los campamentos principales funcionan como [[Documentation/🌍 Mundo/Anclajes de Estabilidad\|Anclajes de Estabilidad]]
 - **Refugio**: Protegen contra los efectos del [[Documentation/🌍 Mundo/Conceptos/El Desvanecimiento\|El Desvanecimiento]]
 - **Monitoreo**: Observación de cambios en la estabilidad regional

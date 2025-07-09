@@ -21,7 +21,7 @@ El sistema de balanceo de riesgo y recursos forma el núcleo económico del jueg
 **Ejemplo práctico**: Un mapa detallado de una región peligrosa (95% de precisión) permite a una expedición evitar trampas conocidas, resultando en un 40% más de recursos recolectados y conocimiento sobre rutas seguras para futuras expediciones.
 
 ### 2. Tensión Tiempo vs. Calidad
-**Concepto**: El mapeo exhaustivo aumenta la [[Documentation/Mécanicas y Sistemas/Estabilidad\|Estabilidad]] pero consume tiempo valioso
+**Concepto**: El mapeo exhaustivo aumenta la [[Estabilidad\|Estabilidad]] pero consume tiempo valioso
 
 **Implementación**:
 - Mapeo exhaustivo: +15 puntos de estabilidad, 3-4 días de trabajo

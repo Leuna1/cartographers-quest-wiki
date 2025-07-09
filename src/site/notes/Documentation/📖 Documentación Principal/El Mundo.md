@@ -32,7 +32,7 @@ El mundo de Cartographer's Quest utiliza un sistema de **generación híbrida** 
 **Impacto en Sistemas:**
 - Afecta la accesibilidad de ciertas rutas y regiones
 - Modifica la visibilidad de [[Documentation/🌍 Mundo/Anclajes de Estabilidad\|Anclajes de Estabilidad]]
-- Influye en la velocidad de deterioro de [[Documentation/Mécanicas y Sistemas/Estabilidad\|Estabilidad]]
+- Influye en la velocidad de deterioro de [[Estabilidad\|Estabilidad]]
 - Cambia la disponibilidad de recursos y [[Documentation/🌍 Mundo/Puntos de Interés\|Puntos de Interés]]
 
 ### 2. Estabilidad Variable por Región
